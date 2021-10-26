@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=no">
+    <link href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="node_modules/bootstrap-icons/icons">
+    <link rel="stylesheet" href="https://unpkg.com/@coreui/icons/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+    <script defer src="https://unpkg.com/@coreui/icons/js/svgxuse.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/index.js"></script>
+    <title>Eunji's Portfolio</title>   
+</head>
+<body class="bg-secondary text-white">
+    <!-- 메인 로딩 화면 시작 -->
+    <div class="loading"><img class="mx-auto d-block position-relative top-50" src="images/1474.gif" alt=""></div>
+    <!-- header 영역 시작 -->
+        <header class="header d-flex flex-column align-items-center flex-md-row p-md-3 fixed-top bg-secondary">
+            <div class="header-logo p-3 me-md-auto cfs-3 fw-bold">
+                <a href="./index.html" class="text-white">Portfolio</a></div>
+            <nav class="my-md-0 me-md-4" id="mainNav">
+                    <a href="#home" class="me-md-4 fw-light tab-act active" id="1">Home</a>
+                    <a href="#about" class="me-md-4 fw-light tab-act" id="2">About</i></a>
+                    <a href="#portfolio" class="me-md-4 fw-light tab-act" id="3">Portfolio</i></a>
+                    <a href="#contact" class="me-md-4 fw-light tab-act" id="4">Contact</i></a>
+            </nav>
+        </header>
+        <!-- header 영역 끝 -->
+
+        <!-- home 영역 시작 -->
+         <section class="container py-5 bg-secondary target" id="home">
+                    <div class="col-xxl-10">
+                <h1 class="main-text mt-5">Web Publisher<br>EunJi's Portfolio<br><a class="highlight" href="#"><span class="hover-span">Hello World</span></a></h1>
+           </div>
+           <div class="col-lg-10 col-xxl-8">
+            <div class="subtitle my-4">I Know How To Do&nbsp;<p class="typing"></p>.</div>
+           </div>
+           <div class="main-heading p-3 pt-md-4 pb-md-4">
+            <ul>
+                <li class="text-uppercase cfs-3">Html5</li>
+                <li class="text-uppercase cfs-3">CSS3</li>
+                <li class="text-uppercase cfs-3">Jquery</li>
+                <li class="text-uppercase cfs-3">Javascript</li>
+                <li class="text-uppercase cfs-3">React</li>
+                <li class="text-uppercase cfs-3">Bootstrap</li>
+                <li class="text-uppercase cfs-3">Sass</li>
+                <li class="text-uppercase cfs-3">Babel</li>
+            </ul>
+        </div>
+           <a href="#contact"class="btn btn-primary p-3 fw-600 btn-custom">Contact Me</a>
+        </section>
+        <!-- home 영역 끝 -->
+
+        <!-- about 영역 시작 -->
+            <section class="about p-3 bg-light text-secondary target" id="about">
+            <div class="pt-md-5 pb-md-2 text-center">
+                <h2 class="title">ABOUT</h2>
+                <div class="subheading">Programming Languages & Tools</div>
+                </div>
+                <div class="row g-3 mb-3 text-center my-3" data-aos="fade-up" data-aos-offset="300" data-aos-easing="linear" data-aos-duration="800">
+                    <ul class="list-inline dev-icons text-muted">
+                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+                        <li class="list-inline-item"><i class="cib-jquery"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-js"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-github"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-bootstrap"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-sass"></i></li>
+                        <li class="list-inline-item"><i class="cib-babel"></i></li>
+                    </ul>
+                </div>
+            <div data-aos="fade-up" data-aos-duration="800" class="container col-lg-6 p-3 pt-md-4 pb-md-4 text-center skill-sub-section">
+            <ul class="ability-per-section mx-auto">
+                <li class="skill-percent text-start">
+                    <i class="fab fa-html5 text-muted fs-2"></i>&nbsp;<i class="fab fa-css3-alt text-muted fs-2"></i>
+                    <span class="skill-span text-muted">Html5 & Css3</span>
+                    <span class="skill-pg my-0">Progress in 95%</span>
+                </li>
+                    <div class="per-box mb-3 rounded-3" data-width="95%"><div class="per per-html-css bg-primary"></div></div>
+              
+                <li class="skill-percent text-start">
+                    <i class="cib-jquery text-muted fs-2"></i>&nbsp;<i class="fab fa-js text-muted fs-2"></i>
+                    <span class="skill-span text-muted">Javascript & Jquery</span>
+                    <span class="skill-pg my-0">Progress in 80%</span>
+                </li>
+                    <div class="per-box mb-3 rounded-3" data-width="80%"><div class="per per-jq-js bg-primary"></div></div>
+               
+                <li class="skill-percent text-start">
+                    <i class="fab fa-bootstrap text-muted fs-2"></i>&nbsp;<i class="fab fa-sass text-muted fs-2"></i>
+                    <span class="skill-span text-muted">Bootstrap & Sass</span>
+                    <span class="skill-pg my-0">Progress in 80%</span>
+                </li>
+                    <div class="per-box mb-3 rounded-3" data-width="80%"><div class="per per-bt-sa bg-primary"></div></div>
+               
+                <li class="skill-percent text-start">
+                    <i class="fab fa-react text-muted fs-2"></i>
+                    <span class="skill-span text-muted">React</span>
+                    <span class="skill-pg my-0">Progress in 65%</span>
+                </li>
+                    <div class="per-box mb-3 rounded-3" data-width="65%"><div class="per per-bt-react bg-primary"></div></div>
+              
+            </ul>
+        </div>
+            <div class="container pt-3 pb-5">
+                <div class="row mb-4 text-center">
+                  <div class="col">
+                    <h3 class="card-h3">Familiar My workflow</h3>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-md-6 d-md-flex"  data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="500" style="overflow-x: hidden">
+                    <div class="card py-3 mb-md-3 mb-sm-3 rounded-3 border-0">
+                      <div class="card-body d-flex flex-row">
+                        <!-- <i src="assets/img/pages/index-icon-bootstrap.svg" alt="Built on Bootstrap" class="avatar avatar-lg mr-3 flex-shrink-0"> -->
+                            <i class="fab fa-html5 cfs-3 mx-1 text-muted"></i>
+                            <i class="fab fa-css3-alt cfs-3 mx-1 text-muted"></i>
+                        <div>
+                          <h5 class="skill-h3 mx-md-3 mx-sm-1">Create Web & Responsive</h5>
+                          <p class="card-text mb-0 p-md-3 p-sm-1">
+                            반응형 레이아웃에 대한 이해와 시멘틱 태그의 역할에 대한 올바른 마크업을 하며 웹표준에 기반한 크로스브라우징을 통해 최적화된 웹사이트 제작에 노력합니다.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 d-md-flex"  data-aos="fade-up"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"data-aos-duration="500" style="overflow-x: hidden">
+                    <div class="card py-3 mb-md-3 mb-sm-3 rounded-3 border-0">
+                      <div class="card-body d-flex flex-row">
+                        <i class="fab fa-bootstrap cfs-3 mx-1 text-muted"></i>
+                        <i class="fab fa-sass cfs-3 mx-1 text-muted"></i>
+                        <div>
+                          <h5 class="skill-h3 mx-md-3 mx-sm-1">Style with SASS</h5>
+                          <p class="card-text mb-0 p-md-3 p-sm-1">
+                            부트스트랩을 이용한 간결한 페이지 제작과 SASS 변수를 통한 CSS를 유연하게 컨트롤 하며 기존의 CSS를 커스터마이징 하여 적용할 수 있습니다. 
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 d-md-flex"  data-aos="fade-up"
+                  data-aos-offset="400"
+                  data-aos-easing="ease-in-sine" data-aos-duration="500" style="overflow-x: hidden">
+                    <div class="card py-3 mb-md-3 mb-sm-3 rounded-3 border-0">
+                      <div class="card-body d-flex flex-row">
+                        <i class="fab fa-js cfs-3 mx-1 text-muted"></i>
+                       <i class="cib-jquery cfs-3 mx-1 text-muted"></i>
+                        <div>
+                          <h5 class="skill-h3 mx-md-3 mx-sm-1">Ability to Js/Jquery</h5>
+                          <p class="card-text mb-0 p-md-3 p-sm-1">
+                            자바스크립트의 ES6 문법을 이해하고 유지보수를 위한 간결한 코드를 추구하기 위해 노력합니다. 이에 자바스크립트와 제이쿼리를 기반으로한 인터렉티브한 동적 효과들에 관심이 많습니다.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 d-md-flex"  data-aos="fade-up"
+                  data-aos-offset="500"
+                  data-aos-easing="ease-in-sine" data-aos-duration="500" style="overflow-x: hidden">
+                    <div class="card py-3 mb-md-3 mb-sm-3 rounded-3 border-0">
+                      <div class="card-body d-flex flex-row">
+                        <i class="fab fa-react cfs-3 mx-1 text-muted"></i>
+                        <div>
+                          <h5 class="skill-h3 mx-md-3 mx-sm-1">work hard on the React</h5>
+                          <p class="card-text mb-0 p-md-3 p-sm-1">
+                            리액트 프로젝트를 통해 리액트의 컴포넌트 구조와 리액트가 가진 문법을 전반적으로 이해 합니다.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <!-- about 영역 끝 -->
+
+        <!-- portfolio 영역 시작 -->
+        <section class="portfolio container target" id="portfolio">
+            <div class="p-3 pt-md-5 pb-md-4 text-center">
+                <h2 class="title">Portfolio</h2>
+                <div class="subheading">My Work & Project</div>
+                <p class="por-p p-3 fw-light">퍼블리셔로서 보여줄 수 있는 동적인 이슈를 찾아서 여러 웹사이트를 벤치마킹하였습니다.</p>
+            </div>
+            <div class="g-3 mb-5 align-item-center text-center">
+                <div class="container py-4">
+                        <div class="row justify-content-lg-between align-items-center pb-5 pb-lg-6" data-aos="fade-left"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine" style="overflow-x: hidden">
+                            <div class="col-lg-5 order-lg-2 mb-4 mb-lg-0 text-white">
+                                <h3 class="h2 text-center img-title">PollexZone&nbsp;<span class="badge bg-primary rounded-pill cfs-1 fw-normal text-secondary ml-2">Responsive</span>
+                                </h3>
+                                <p class="lead fw-light text-light mt-4">메인페이지,폴렉스존소개 페이지로 구성. 스크롤시 나타나는 레이아웃 애니메이션, 이미지 경로에 따른 특정 좌표로 이동, 자바스크립트를 이용한 스크롤시 특정 엘리먼트에 효과 구현</p>
+                                <p class="lead fw-light text-light mt-4">제작기간 : 2주 / 기여도 : 100%</p>
+                            <a href="https://eunji-portfolio-pollexzone.netlify.app/" class="link-underline fs-5 mx-lg-5 mx-sm-5">View Page</a>
+                            <a href="https://github.com/eunji00126/Portfolio-PollexZone" class="link-underline fs-5 mx-lg-5 mx-sm-5">View Code</a>
+                        </div>
+            <div class="col-lg-6">
+            <a href="#">
+                <figure>
+                    <div class="img-overlay mb-3">
+                        <a href="https://eunji-portfolio-pollexzone.netlify.app/"><img src="images/pr-img2.png" width="800" height="500" alt="PollexZone" class="img-thumbnail bg-secondary">
+                        <div class="img-hover">
+                            <p class="img-text">Responsive<br>View Page</p>
+                        </div>
+                    </a>
+                    </div>
+                </figure>
+            </a>
+        </div>
+            </div>
+            <div class="row justify-content-lg-between align-items-center pb-5 pb-lg-6" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" style="overflow-x: hidden">
+                <div class="col-lg-5 mb-4 mb-lg-0 text-white">
+                    <h3 class="h2 text-center img-title">YumSem&nbsp;<span class="badge bg-primary rounded-pill cfs-1 fw-normal text-secondary ml-2">Responsive<span>
+                    </h3>
+                    <p class="lead fw-light text-light mt-4">메인페이지,얌샘스토리 페이지,얌샘메뉴 페이지로 구성. 자바스크립트 or 플러그인을 활용한 다양한 유형의 이미지 슬라이드, 하단(다운)버튼 페이지 이동, 이미지 로테이션과 패럴렉스 스크롤링을 이용한 애니메이션, 이미지 갤러리 구현, 자바스크립트를 이용한 스크롤시 메뉴들이 나타나기 효과</p>
+                    <p class="lead fw-light text-light mt-4">제작기간 : 2주 / 기여도 : 100%</p>
+                <a href="https://eunji-portfolio-yumsem.netlify.app/" class="link-underline fs-5 mx-lg-5 mx-sm-5">View Page</a>
+                <a href="https://github.com/eunji00126/Portfolio-Yumsem" class="link-underline fs-5 mx-lg-5 mx-sm-5">View Code</a>
+            </div>
+                <div class="col-lg-6 order-lg-1">
+                    <a href="#">
+                        <figure>
+                            <div class="img-overlay mb-3">
+                                <a href="https://eunji-portfolio-yumsem.netlify.app/"><img src="images/pr-img3.png" width="800" height="500" alt="YumSem" class="img-thumbnail bg-secondary">
+                                <div class="img-hover">
+                                    <p class="img-text">Responsive<br>View Page</p>
+                                </div>
+                            </a>
+                            </div>
+                        </figure>
+                    </a>
+                </div>
+                    </div>
+                    <div class="row justify-content-lg-between align-items-center pb-5 pb-lg-6" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" style="overflow-x: hidden">
+                      <div class="col-lg-5 order-lg-2 mb-4 mb-lg-0 text-white">
+                          <h3 class="h2 text-center img-title">MakeUpForever&nbsp;<span class="badge bg-primary rounded-pill cfs-1 fw-normal text-secondary ml-2">DeskTop</span>
+                          </h3>
+                          <p class="lead fw-light text-light mt-4">메인페이지,제품페이지들,로그인으로 구성. 제이쿼리를 이용한 슬라이드, 레이어 슬라이드 메뉴, 탑버튼, 상품 더보기 구현, 제품 선택의 필터 모달창</p>
+                          <p class="lead fw-light text-light mt-4">제작기간 : 1주 / 기여도 : 100%</p>
+                      <a href="https://eunji-portfolio-makeupforever.netlify.app/" class="link-underline fs-5 mx-lg-5 mx-sm-5">View Page</a>
+                      <a href="https://github.com/eunji00126/Portfolio-MakeUpForever" class="link-underline fs-5 mx-lg-5 mx-sm-5">View Code</a>
+                  </div>
+                      <div class="col-lg-6 order-lg-1">
+                          <a href="#">
+                              <figure>
+                                  <div class="img-overlay mb-3">
+                                      <a href="https://eunji-portfolio-makeupforever.netlify.app/"><img src="images/pr-img1.png" width="800" height="500" alt="MakeUpForever" class="img-thumbnail bg-secondary">
+                                      <div class="img-hover">
+                                          <p class="img-text">DeskTop(PC버전)<br>View Page</p>
+                                      </div>
+                                  </a>
+                                  </div>
+                              </figure>
+                          </a>
+                      </div>
+                          </div>
+                    <div class="row justify-content-lg-between align-items-center pb-5 pb-lg-6" data-aos="fade-left"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" style="overflow-x: hidden">
+                        <div class="col-lg-5 mb-4 mb-lg-0 text-white">
+                            <h3 class="h2 text-center img-title">React-Blog&nbsp;<span class="badge bg-primary rounded-pill cfs-1 fw-normal text-secondary ml-2">Responsive</span>
+                            </h3>
+                            <p class="lead fw-light text-light mt-4">현재 준비중입니다.</p>
+                        <a href="#" class="link-underline fs-5 mx-lg-5 mx-sm-5">View Page</a>
+                        <a href="#" class="link-underline fs-5 mx-lg-5 mx-sm-5">View Code</a>
+                    </div>
+                        <div class="col-lg-6">
+                            <a href="#">
+                                <figure>
+                                    <div class="img-overlay mb-3">
+                                        <img src="images/42478d6aab38d7980195b55411e44310.png" width="800" height="500" alt="React-Blog" class="img-thumbnail bg-secondary">
+                                        <div class="img-hover">
+                                            <p class="img-text">Comming Soon</p>
+                                        </div>
+                                    </div>
+                                </figure>
+                            </a>
+                        </div>
+                            </div>
+                        </div>
+                </div>
+        </section>
+        <!-- portfolio 영역 끝 --> 
+
+        <!-- contact 영역 시작 -->
+        <section class="contact bg-primary text-secondary target" id="contact" data-aos="fade-up" data-aos-offset="300" data-aos-easing="linear" data-aos-duration="500">
+            <div class="p-3 pt-md-5 pb-md-4 text-center">
+                <h2 class="title">CONTACT</h2>
+                <div class="contact-content row p-3 mt-5">
+                    <div class="col-md-6">
+                        <div class="icons">
+                                <div class="info my-3">
+                                    <i class="fas fa-user"></i>
+                                    <div class="cfs-2 fw-bold">Name</div>
+                                    <div class="mt-2">최은지</div>
+                                </div>
+                                <div class="info">
+                                    <i class="fas fa-envelope"></i>
+                                    <div class="cfs-2 fw-bold">Email</div>
+                                    <div class="mt-2">eunji00126@gmail.com</div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col">
+                        <div class="msg-title text cfs-2 fw-bold">Message me</div>
+                            <form id="contact-form" class="row g-3 mt-3 gform" data-email="eunji00126@gmail.com" method="POST" action="https://script.google.com/macros/s/AKfycbzRb0hf_AJ-IsHSnKebmy8us3FHXyV1UJDgOhopUxHAQKI5vP2w/exec">
+                                <div class="col-md-6">
+                                    <input type="name" name="name" placeholder="Your Name" class="form-control rounded-3 border-0" id="inputEmail4">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" name="email" placeholder="Your Email" class="form-control rounded-3 border-0" id="inputPassword4">
+                                  </div>
+                                  <div class="col-12 mt-3">
+                                    <textarea name="message" class="form-control rounded-3 heigh-0" cols="30" rows="10" placeholder="메일을 보내주시면 확인 후 빠른 답장드리겠습니다." required></textarea>
+                                </div>
+                            <div class="button-area mt-3">
+                            <button type="submit" name="submit" class="send-btn rounded-3 border-0 bp-3">Send message</button>
+                            </div>
+                            <div style="display:none" class="thankyou_message">
+                                <!-- the thankyou message -->
+                                <h2 class="thx-msg"><em>Thanks</em> for contacting Me!<br>확인 후 답장드리겠습니다.</h2>
+                               </div>
+                        </form>
+                    </div>
+            </div>
+            </div>
+        </section>
+         <!-- contact 영역 끝 -->
+
+         <!-- footer 영역 시작 -->
+        <footer class="p-3 text-center text-white bg-dark">
+            <span>Created By Eunji&nbsp;<a href="https://github.com/eunji00126" class="footer-icon text-white"><i class="fab fa-github"></i></a>&nbsp;| <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
+        </footer>
+        <!-- footer 영역 끝 -->
+        <script>
+            //AOS 라이브러리 동작 및 초기화
+            AOS.init(); 
+        </script>
+        <script src="js/form-submission-handler.js"></script>
+</body>
+</html>

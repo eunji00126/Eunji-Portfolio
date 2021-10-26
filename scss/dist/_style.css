@@ -1,0 +1,400 @@
+@charset "UTF-8";
+/*  import google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration-line: none;
+  -moz-text-decoration-line: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.loading {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: #fff;
+  z-index: 999999;
+}
+
+.loading img {
+  position: absolute;
+  top: 0;
+  left: 40%;
+}
+
+.header.active {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  z-index: 9999;
+}
+
+.header-logo, .main-title, .about-title, .skill-title, .work-title, .port-title, .contact-title {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.subheading {
+  font-family: "Poppins", sans-serif;
+}
+
+/* align items로 세로방향 센터로 정렬 */
+/* 가로방향으로도 가운데로 와야하니까 justufycontent해줌 */
+/* 높이를 준 이유는 높이를 먼저 주고 그안에서 정렬을 할 것이기 때문임. */
+/* 결과를 보면 세로방향에서 센터로 정렬된 것임을 볼 수 있음 display flex를 쓴 이유 */
+/* top:35vh 는 높이의 35%에 위치를 의미 */
+section {
+  max-width: 100%;
+  height: auto;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.main-hover-text {
+  color: #343434;
+}
+.main-hover-text .hv-text {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.4;
+  word-spacing: 3px;
+  max-width: 45rem;
+  text-shadow: 0px 1px 0px white;
+}
+.main-hover-text .highlight {
+  display: inline-block;
+  color: #343434;
+  transition: color 250ms, text-shadow 250ms;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px white;
+  position: relative;
+  z-index: 1;
+}
+.main-hover-text .highlight::after {
+  position: absolute;
+  z-index: -1;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #343434;
+  transition: all 250ms;
+}
+.main-hover-text .highlight:hover {
+  color: white;
+  text-shadow: 0px 1px 0px black;
+}
+.main-hover-text .highlight:hover::after {
+  height: 105%;
+  width: 105%;
+}
+
+.svgpath {
+  position: absolute;
+  top: -50%;
+  left: 10%;
+  opacity: 0.7;
+}
+
+#curve-1, #curve-2 {
+  fill: transparent;
+}
+
+.pathimg {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+}
+
+text {
+  font-size: 8px;
+  fill: transparent;
+  stroke: #000;
+  stroke-width: 0.3;
+  font-family: arial, cursive;
+  font-weight: bold;
+}
+
+#text-1 {
+  fill: #000;
+  stroke: none;
+}
+
+.main-heading {
+  display: none;
+}
+
+.main-heading ul {
+  list-style: none;
+}
+
+.main-title {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.typing {
+  display: inline;
+  animation-name: text;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+  font-size: 18px;
+  line-height: 1;
+  color: #dc143c;
+}
+
+@keyframes text {
+  0% {
+    border-right: 1px solid #fff;
+  }
+  50% {
+    border-right: 1px solid #000;
+  }
+  100% {
+    border-right: 1px solid #fff;
+  }
+}
+#about {
+  max-width: 1920px;
+  border-top: 1px solid #ddd;
+}
+
+#about .intro {
+  padding-top: 2.5rem;
+  padding-bottom: 9rem;
+  max-width: 1920px;
+}
+
+#about .intro .lead {
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+
+#skill .list-inline {
+  list-style: none;
+}
+
+#skill .list-inline .list-inline-item {
+  display: inline-block;
+  font-size: 3rem;
+}
+
+.skill-percent {
+  list-style: none;
+}
+
+.per-box {
+  border: 1px solid #000;
+  width: 100%;
+  height: 25px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.per-html-css {
+  border: 1px solid #000;
+  width: 90%;
+  height: 100%;
+  background-color: #000;
+  animation: html-css 5s ease-in-out;
+}
+
+@keyframes html-css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+.per-jq-js {
+  border: 1px solid #000000;
+  width: 80%;
+  height: 100%;
+  background-color: #000;
+  animation: jq-js 5s ease-in-out;
+}
+
+@keyframes jq-js {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+.per-bt-sa {
+  border: 1px solid #000;
+  width: 80%;
+  height: 100%;
+  background-color: #000;
+  animation: bt-sa 5s ease-in-out;
+}
+
+@keyframes bt-sa {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+.per-bt-react {
+  border: 1px solid #000;
+  width: 70%;
+  height: 100%;
+  background-color: #000;
+  animation: bt-react 5s ease-in-out;
+}
+
+@keyframes bt-react {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+.percent-span {
+  text-align: right;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+#skill .work-ul {
+  padding: 0;
+  display: inline-block;
+  width: 95%;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+
+#skill .work-ul .work-li {
+  letter-spacing: 2px;
+}
+
+.skill-span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.portfolio-item {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.port-btn {
+  width: 150px;
+}
+
+.contact-content p, .text {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.icons .info .head {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.icons .info .sub-title {
+  font-family: "Poppins", sans-serif;
+}
+
+.send-btn {
+  font-family: "Poppins", sans-serif;
+}
+
+.source-text {
+  font-family: "Poppins", sans-serif;
+}
+
+.source-box {
+  width: 100%;
+}
+
+.source-ul {
+  list-style: none;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.link-li:hover {
+  font-weight: 600;
+}
+
+.portfolio-box-1 {
+  background-image: url(../images/예시.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.portfolio-box-2 {
+  background-image: url(../images/OT130I1-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.portfolio-box-3 {
+  background-image: url(../images/얌샘최종.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer-icon {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .main {
+    height: 800px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main {
+    height: 500px;
+  }
+
+  svg {
+    display: none;
+  }
+
+  .main-hover-text {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .work-li {
+    font-size: 12px;
+  }
+
+  .skill-span {
+    font-size: 12px;
+    font-weight: 600;
+  }
+}

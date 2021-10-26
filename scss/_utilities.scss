@@ -1,0 +1,92 @@
+$utilities:() !default;
+$utilities: map-merge(
+    ("button-padding": (
+    responsive: true,
+    property: padding,
+    class: bp,
+    values: (
+        0:0,
+        1:0.2rem,
+        2:0.4rem,
+        3:0.6rem,
+        4:0.8rem,
+        5:1rem
+    )
+    ),
+    "custom-font-size": (
+    property: font-size,
+    class: cfs,
+    values: (
+        0:0.5rem,
+        1:1rem,
+        2:1.5rem,
+        3:2rem,
+        4:2.5rem,
+        5:3rem
+    )
+),
+"custom-height-size":(
+    property:height,
+    class: heigh,
+    values:(
+        0:100px,
+        1:200px,
+        2:300px,
+        3:400px,
+        4:500px,
+        5:600px
+    )
+),
+"width": (
+    property: width,
+    class: w,
+    values: (
+      25: 25%,
+      50: 50%,
+      75: 75%,
+      100: 100%,
+      auto: auto
+    )
+  ),
+  "max-width": (
+    property: max-width,
+    class: mw,
+    values: (100: 100%)
+  ),
+  "viewport-width": (
+    property: width,
+    class: vw,
+    values: (100: 100vw)
+  ),
+  "min-viewport-width": (
+    property: min-width,
+    class: min-vw,
+    values: (100: 100vw)
+  ),
+  "height": (
+    property: height,
+    class: h,
+    values: (
+      25: 25%,
+      50: 50%,
+      75: 75%,
+      100: 100%,
+      auto: auto
+    )
+  ),
+  "max-height": (
+    property: max-height,
+    class: mh,
+    values: (100: 100%)
+  ),
+  "viewport-height": (
+    property: height,
+    class: vh,
+    values: (100: 100vh)
+  ),
+  "min-viewport-height": (
+    property: min-height,
+    class: min-vh,
+    values: (100: 100vh)
+  ),
+),$utilities);
